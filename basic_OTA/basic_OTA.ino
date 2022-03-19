@@ -30,9 +30,9 @@ void setup() {
     ESP.restart();
   }
 
-  #ifdef PASSWORD
+  #ifdef OTA_PASSWORD
     // If you want authentication, uncomment this line
-    ArduinoOTA.setPassword(STRINGIZE_VALUE_OF(PASSWORD));
+    ArduinoOTA.setPassword(STRINGIZE_VALUE_OF(OTA_PASSWORD));
   #endif
 
   #ifdef HOSTNAME
